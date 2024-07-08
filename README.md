@@ -1,12 +1,13 @@
-# A-Share Stock Backtesting and Analysis
+# A-Share Quantitative Trading Strategy With Backtesting
 
-This repository contains a Jupyter Notebook for backtesting and analyzing stock data using various financial metrics and technical indicators. The notebook leverages historical stock data to compute volatility, turnover rates, and other derived features to classify stocks and visualize their performance.
+This repository showcases a sophisticated quantitative trading strategy implemented in a Jupyter Notebook. The strategy leverages historical stock data, computes essential financial metrics, and derives technical indicators to aid in backtesting and performance analysis. This project reflects my expertise in quantitative finance, data analysis, and algorithmic trading.
 
 ## Table of Contents
 
 - [Introduction](#introduction)
 - [Features](#features)
-- [Requirements](#requirements)
+- [Technical Stack](#technical-stack)
+- [Installation](#installation)
 - [Usage](#usage)
 - [Data Sources](#data-sources)
 - [Results](#results)
@@ -14,25 +15,25 @@ This repository contains a Jupyter Notebook for backtesting and analyzing stock 
 
 ## Introduction
 
-This project aims to provide a comprehensive analysis of selected stocks over a specified period. It involves downloading historical stock data, calculating key metrics such as volatility and turnover rates, and visualizing these metrics to aid in investment decisions.
+The primary objective of this project is to develop and backtest a quantitative trading strategy using historical stock data. By calculating key financial metrics such as volatility and turnover rates, and applying various technical indicators, this project aims to provide insightful analysis to enhance trading decisions.
 
 ## Features
 
-- **Data Loading**: Downloads historical stock data for multiple stocks from Yahoo Finance.
-- **Volatility Calculation**: Computes the historical volatility of each stock.
-- **Technical Indicators**: Adds various technical indicators, including scaled closing prices, returns, historical volatility, and volume volatility.
-- **Categorization**: Classifies stocks based on their volatility into low, medium, and high categories.
-- **Visualization**: Provides visualizations to compare the performance and volatility of different stocks.
+- **Historical Data Download**: Fetches historical stock data for multiple equities from Yahoo Finance.
+- **Volatility and Turnover Calculation**: Computes historical volatility and turnover rates for each stock.
+- **Technical Indicators**: Integrates a suite of technical indicators, including scaled closing prices, returns, historical volatility, and volume volatility.
+- **Stock Classification**: Categorizes stocks based on volatility into low, medium, and high.
+- **Backtesting Framework**: Implements a backtesting mechanism to evaluate the trading strategy.
+- **Visualization**: Provides comprehensive visualizations to compare stock performance and analyze strategy outcomes.
 
-## Requirements
+## Technical Stack
 
-- Python 3.x
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- scikit-learn
-- yfinance
+- **Programming Language**: Python 3.x
+- Libraries:
+  - Data Manipulation: `pandas`, `numpy`
+  - Visualization: `matplotlib`, `seaborn`
+  - Machine Learning: `scikit-learn`
+  - Financial Data: `yfinance`
 
 You can install the required packages using the following command:
 
@@ -45,13 +46,13 @@ pip install pandas numpy matplotlib seaborn scikit-learn yfinance
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/stock-backtesting-analysis.git
+   git clone https://github.com/Yiyang-Xu/A-Share-Volatility-Trading-Strategy.git
    ```
 
 2. Navigate to the repository:
 
    ```bash
-   cd stock-backtesting-analysis
+   cd A-Share-Volatility-Trading-Strategy
    ```
 
 3. Open the Jupyter Notebook:
@@ -64,16 +65,17 @@ pip install pandas numpy matplotlib seaborn scikit-learn yfinance
 
 ## Data Sources
 
-- Historical stock data is sourced from Yahoo Finance using the `yfinance` library.
-- Stock symbols and associated metadata are loaded from an Excel file (`Stocks.xlsx`) containing a watchlist sheet.
+- **Yahoo Finance**: Historical stock data is sourced using the `yfinance` library.
+- **Excel File**: Stock symbols and metadata are loaded from an Excel file (`Stocks.xlsx`) containing a watchlist sheet.
 
 ## Results
 
-The notebook provides a detailed analysis of the selected stocks, including:
+The notebook presents a detailed quantitative analysis, including:
 
-- Volatility and turnover rate calculations.
-- Classification of stocks based on volatility.
-- Visualization of technical indicators and stock performance.
+- Computation of volatility and turnover rates.
+- Classification of stocks based on their volatility.
+- Integration of technical indicators.
+- Visual and statistical analysis of the trading strategy's performance.
 
 ## License
 
